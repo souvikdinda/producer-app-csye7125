@@ -15,6 +15,7 @@ const main = async () => {
 
   } catch (error) {
     onsole.error('Error running health check:', error);
+    // Exiting with error code 1
     process.exit(1);
   } finally {
     process.exit();
