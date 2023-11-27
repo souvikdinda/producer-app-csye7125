@@ -24,6 +24,7 @@ const main = async () => {
       console.error('Health check failed after retries:', healthCheckResult.details);
     }
   } catch (error) {
+    process.exitcode = 1;
     console.error('Error running health check:', error);
   } finally {
     process.exit();
