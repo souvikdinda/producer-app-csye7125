@@ -22,7 +22,7 @@ const main = async () => {
   try {
     const url = process.env.HEALTH_CHECK_URL;
 
-    let result = await runHealthCheck(url);
+    const result = await runHealthCheck(url);
 
     console.log(`Health check passed for ${result.url} with status ${result.status} and process time ${result.processTime}ms`);
 
