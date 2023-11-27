@@ -4,9 +4,12 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+const kafkaBrokers = process.env.KAFKA_BROKERS.split(',');
+
+
 const kafka = new Kafka({
   // clientId: process.env.KAFKA_CLIENTID,
-  brokers: [process.env.KAFKA_BROKERS],
+  brokers: kafkaBrokers,
   logLevel: logLevel.ERROR,
 });
 
