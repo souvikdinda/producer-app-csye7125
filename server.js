@@ -25,6 +25,7 @@ const main = async () => {
     }
 
   } catch (error) {
+    process.exitcode = 1;
     console.error('Error running health check:', error);
   } finally {
     process.exit();
