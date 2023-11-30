@@ -17,9 +17,9 @@
         "kafka-node": "^5.0.0",
         "kafkajs": "^2.2.4"
     },
-    "devDependencies": {
-        "@semantic-release/git": "^10.0.1",
-        "@semantic-release/github": "^9.2.3",
-        "semantic-release": "^22.0.7"
-    }
+    
+    "release": {
+        "extends": "./release.config.cjs"
+      }
+ 
 }
